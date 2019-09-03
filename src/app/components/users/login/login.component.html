@@ -1,0 +1,35 @@
+<section id="login">
+  <div class="container">
+    <div class="row">
+      <div >
+        <div class="card_login">
+          <div class="card" >
+            <img src="../../../../assets/img/baseline-person-24px@2x.png">
+            <div class="card-body">
+              <form #formLogin="ngForm" (submit)="onLogin()">
+                <h1 class="h3" *ngIf="!isError">Inicio Sesion</h1>
+                <div class="alert alert-danger" role="alert" *ngIf="">
+                  Something is wrong!
+                </div>
+                <div class="form-group">
+                  <input [(ngModel)]="email" type="email" id="email" name="email" class="form-control"
+                    placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <input [(ngModel)]="password" type="password" id="password" name="password" class="form-control"
+                    placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-lg btn-primary btn-block" style="align-content: center;">
+                  <h5>Login</h5>
+                </button>
+                
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

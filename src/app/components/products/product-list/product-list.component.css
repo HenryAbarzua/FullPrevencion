@@ -1,0 +1,72 @@
+.car-header{
+    width: 100%;
+  margin: 100%;
+  border: solid 1px #707070;
+    border-radius: 34px;
+  
+  }
+  td{
+      width: 100px;
+
+
+    background-color: #E4E1E1;
+  }
+  tr{
+      width: 100%;
+  }
+#prevencion{
+height:190px; 
+width: 480PX;
+margin: 1px;
+border: solid 1px #707070;
+border-radius: 34px;
+margin-top: 50px;
+margin-left: 250px;
+position: relative;
+
+}
+div{
+    border: solid 1px #707070;
+    border-radius: 3px;
+    width: 100%;
+}
+table{
+    margin-top: 30px;
+    width: 100%;
+}
+tbody{
+    width:100% ;
+    height: 100%;
+}
+#tabla{
+    margin-left: 50px;
+    margin-right: 200px;
+    
+   
+}
+
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+    }
+    
+    .active-cyan input[type=text] {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+    }
+    
+    .active-cyan .fa,
+    .active-cyan-2 .fa {
+    color: #4dd0e1;
+    }
+    #search{
+        margin-left: 400px; 
+        width: 140px;
+    }.active-pink-4 input[type=text]:focus:not([readonly]) {
+        border: 1px solid #f48fb1;
+        box-shadow: 0 0 0 1px #f48fb1;
+        }
+        .active-pink-3 input[type=text] {
+        border: 1px solid #f48fb1;
+        box-shadow: 0 0 0 1px #f48fb1;
+        }

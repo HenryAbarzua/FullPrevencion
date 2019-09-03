@@ -1,0 +1,48 @@
+.form-control.login-user {
+    border: 0 solid #fff !important;
+  }
+  
+
+  .card {
+     height: 25em;
+  width: 30em;
+    border: solid 1px #707070;
+    border-radius: 34px;
+    background-color: rgba(82, 82, 82, 0.93);
+    box-shadow: 0 3em 6em 0;
+    margin-left: 50%;
+    margin-bottom: 75%;
+    margin-top: 30px;
+    margin-right: 50%;
+ 
+  }  
+  img{
+    width: 57.9px;
+    height: 59.7px;
+    object-fit: contain;
+    margin-left: 13em;
+    margin-top: 10px;
+  }
+  h1{
+    position: relative;
+    margin-left: 5em;
+    color: azure;
+    font-family: SegoeUI;
+
+  }
+  a{
+    color: azure;
+  }
+button{
+  
+    width: 8em;
+    height: 2em;
+    border-radius: 18px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #707070;
+    background-color: #ca3e47;
+    margin-left: 7em;
+ 
+    
+  }
+ 

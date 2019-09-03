@@ -1,0 +1,19 @@
+<table class="table table-hover table-fixed" style="background-color: white;">
+    <thead class="thead-dark">
+        <tr>
+
+            <th scope="col">Nombre</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Empresa</th>
+            <th scope="col">fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of mantencionProxima | orderBy:'date' 'false'" (click)=gotoProduct()>
+            <td scope="row">{{product.name}}</td>
+            <td scope="row">{{product.category}}</td>
+            <td scope="row">{{product.location}}</td>
+            <td scope="row">{{product.fecha}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+                                                         
+<div class="principal">
+    <div class="card text-white bg-dark mb-5" style="max-width: 18rem; margin-top:6rem; position: absolute;">
+
+        <div class="card-header">
+            <h2>Añadir Producto</h2>
+        </div>
+        <div class="card-body">
+            <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+                <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="productService.selectedProduct.$key">
+                <div class="form-group">
+                
+                    <input type="text" class="form-control" name="name" #name="ngModel"
+                        [(ngModel)]="productService.selectedProduct.name" match="name" *ngIf="!empty" placeholder="Nombre de Producto" ng-show="myForm.myConfirmField.$error.match" >
+                  
+                    </div>  
+                <div class="form-group" >
+                    <input type="text" class="form-control" name="category" #category="ngModel"
+                        [(ngModel)]="productService.selectedProduct.category"  placeholder="Categoria de Producto">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="location" #price="ngModel"
+                        [(ngModel)]="productService.selectedProduct.location" placeholder="Empresa de compra">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="price" #category="ngModel"
+                        [(ngModel)]="productService.selectedProduct.price" placeholder="Cantidad">
+                </div>
+                <div class="form-group">
+                        <input  type="date" name="fecha" #category="ngModel"
+                            [(ngModel)]="productService.selectedProduct.fecha" placeholder="Fecha">
+                    </div>
+                <div class="from.group">
+                    <button id="btnAdd" class="btn btn-primary" type="submit" >
+                        <i class="fas fa-plus-circle"></i> Agregar
+                    </button>
+                </div>
+                <br>
+                <div>
+                    <button class="btn btn-secondary" type="reset" (click)="resetForm(productForm)">
+                        <i class="fas fa-sync-alt"></i> Reset
+                    </button>
+                </div>
+
+
+            </form>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="lista" >
+    <app-product-list></app-product-list>
+</div>

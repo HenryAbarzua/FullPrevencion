@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+
+
+<div class="card bg-dark " id="tabla">
+
+    <div class="active-pink-3 active-pink-4 mb-6" style="width: 200px; margin-left: 70%; margin-top: 2em" >
+            <input class="form-control" type="text" placeholder="Search"  >
+        
+          </div>
+    <table class="table table-hover table-fixed">
+            <thead><tr style="color:white;">
+                    <th>
+                    <th> <b>Nombre</b></th>
+                    <th> <b>Categoria</b></th>
+                    <th> <b>Empresa</b></th>
+                    <th> <b>Cantidad</b></th>
+                    <th> <b> fecha</b></th>
+                    <th></th>
+                </tr>
+                </thead>
+        <tbody>
+            
+            
+       
+            <tr *ngFor="let product of productList  ">
+                <td></td>
+
+                <td>{{product.name}}</td>
+                <td>{{product.category}}</td>
+                <td>{{product.location}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.fecha}}</td>
+                <td>
+                    <a id="editar" class="btn btn-secondary text-white" (click)="onEdit(product)">
+                        <i class="far fa-edit"></i>
+                    </a>
+                    <a></a>
+                    <a class="btn btn-danger text-white" (click)="onDelete(product.$key)">
+                        <i class="fas fa-trash-alt"> </i>
+
+
+                    </a>
+
+                </td>
+
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+
